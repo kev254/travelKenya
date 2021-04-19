@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "844710944958",
+    "firebase_url": "https://hello-a5453-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "hello-a5453",
+    "storage_bucket": "hello-a5453.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:844710944958:android:8e0b2b933609aeac90beef",
+        "android_client_info": {
+          "package_name": "com.example.tourme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "844710944958-0c54evbh5cet4v16fh70eq2cdhcjeq41.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVT1YB5b6lqKOSUEcb6tf-TSN5LFBBXeo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "844710944958-0c54evbh5cet4v16fh70eq2cdhcjeq41.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

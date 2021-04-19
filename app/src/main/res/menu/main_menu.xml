@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_menu"
+        android:title="Menu"
+        app:showAsAction="always">
+        <menu>
+
+
+    <item
+        android:id="@+id/admin"
+        android:title="Post Review"
+        android:orderInCategory="100"/>
+    <item
+        android:id="@+id/hire_car"
+        android:title="Taxi"
+        android:orderInCategory="100"/>
+
+    <item
+        android:id="@+id/locate_sites"
+        android:title="Tourist Sites"
+        android:orderInCategory="100"/>
+    <item
+        android:id="@+id/btn_logout"
+        android:title="Logout"
+        android:orderInCategory="100"/>
+        </menu>
+    </item>
+
+</menu>

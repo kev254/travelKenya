@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TaxiActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginLeft="4px"
+            android:layout_marginRight="10px"
+            android:layout_marginTop="4px"
+            android:id="@+id/icon"
+            android:src="@drawable/taxi">
+
+        </ImageView>
+
+        <TextView
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:text="Cabs"
+            android:gravity="center"
+            android:textColor="@android:color/holo_blue_bright"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_margin="5dp"
+        android:text="Please Choose Your Favourite Cab Company and Book a Ride"
+        android:background="@android:color/black"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <include
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        layout="@layout/list"/>
+
+</LinearLayout>

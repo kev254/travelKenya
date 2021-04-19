@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">TravelKenya</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="user_name">User Name</string>
+    <string name="title_activity_tabbed">TabbedActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="admin_panel">Admin Panel</string>
+    <string name="post_title">Post Title</string>
+    <string name="post_description">Post Description</string>
+    <string name="post">Post</string>
+    <string name="admin_options">Admin Options</string>
+    <string name="agency">Agency Email</string>
+    <string name="some_text">wertyuidfghjkxcvbnm dfghjdfghdfghjdfghjfgh</string>
+    <string name="visit">Visit</string>
+    <string name="view">View</string>
+    <string name="website_title">Website Title</string>
+    <string name="contact">Contact</string>
+</resources>
