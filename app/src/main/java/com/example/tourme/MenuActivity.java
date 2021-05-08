@@ -179,7 +179,6 @@ list=new ArrayList<PostModel>();
         setContentView(R.layout.details_activity);
         AppCompatTextView Details,Title;
         ImageView imageView;
-
         ExtendButton=findViewById(R.id.extend);
         VisitButton=findViewById(R.id.fab3);
         ContactButton=findViewById(R.id.fab1);
@@ -211,7 +210,7 @@ for (FloatingActionButton floatingActionButton:fabs){
                         .withListener(new PermissionListener() {
                             @Override
                             public void onPermissionGranted(PermissionGrantedResponse response) {
-                                Intent intent=new Intent(Intent.ACTION_CALL);
+                                Intent intent=new Intent(Intent.ACTION_DIAL);
                                 intent.setData(Uri.parse("tel:0792097883"));
                                 startActivity(intent);
                             }
@@ -288,7 +287,7 @@ token.continuePermissionRequest();
                 public void onClick(DialogInterface dialog, int which) {
                     dialog.dismiss();
                     FirebaseAuth.getInstance().signOut();
-                    startActivity(new Intent(MenuActivity.this,WelcomeScreen.class));
+                    startActivity(new Intent(MenuActivity.this,SigninActivity.class));
 
                 }
             });

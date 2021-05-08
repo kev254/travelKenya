@@ -17,7 +17,7 @@ public class TaxiActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_taxi);
 
-        final String [] cabs={"http://www.uber.com","http://www.bolt.eu/en-ke/cities/nairobi/","http://www.little.bz","http://www.delightcabs.co.ke","http://www.absolutecabs.co.ke","http://www.pewin.co.ke","info@jimcab.co.ke","http://www.kenatco.co.ke","http://www.universalcabs.co.ke","http://www.aircab.co.ke","http://www.princesstravelskenya.com"};
+        final String [] cabs={"http://www.uber.com/","http://www.bolt.eu/en-ke/cities/nairobi/","http://www.little.bz","http://www.delightcabs.co.ke","http://www.absolutecabs.co.ke","http://www.pewin.co.ke","info@jimcab.co.ke","http://www.kenatco.co.ke","http://www.universalcabs.co.ke","http://www.aircab.co.ke","http://www.princesstravelskenya.com"};
 
         ListAdapter myAdapter=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,cabs);
         final ListView myList=(ListView)findViewById(R.id.mylist);
