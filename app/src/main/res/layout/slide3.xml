@@ -11,11 +11,27 @@
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/hotel6"/>
+            android:src="@drawable/hotel1"
+            android:layout_height="wrap_content"/>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enjoy the Kenyan Geo Nature"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="#1B5E20"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Visti Kenya at a glance before deciding your final destination"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:gravity="center_horizontal" />
 
     </LinearLayout>
 

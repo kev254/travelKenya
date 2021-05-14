@@ -9,6 +9,7 @@
 
     <application
         android:allowBackup="true"
+        android:usesCleartextTraffic="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -22,8 +23,6 @@
         <activity android:name=".SigninActivity" />
         <activity android:name=".MenuActivity" />
         <activity android:name=".IntroActivity"/>
-        <activity android:name=".WelcomeScreen"/>
-        <activity android:name=".SplashScreenActivity"/>
         <activity android:name=".SignupActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>
@@ -32,6 +31,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyArUM2YaTaITyQ8Ac3E00wHdHlxqU6lp0s"/>
     </application>
 
 </manifest>

@@ -13,7 +13,7 @@ public class web extends AppCompatActivity {
         setContentView(R.layout.activity_web);
 
         url=getIntent().getStringExtra("transfered");
-        WebView web=(WebView)findViewById(R.id.viewWeb);
+        WebView web=findViewById(R.id.viewWeb);
         web.loadUrl(url);
     }
 }

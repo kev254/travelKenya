@@ -1,6 +1,6 @@
 <vector android:autoMirrored="true"
     android:height="30dp"
-    android:tint="#ffffff"
+    android:tint="#1B5E20"
     android:viewportHeight="24.0"
     android:viewportWidth="24.0"
     android:width="24dp"

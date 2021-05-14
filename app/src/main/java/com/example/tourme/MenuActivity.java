@@ -168,10 +168,10 @@ list=new ArrayList<PostModel>();
         firebaseAuth=FirebaseAuth.getInstance();
        if(firebaseAuth.getCurrentUser()==null){
            finish();
-           startActivity(new Intent(this, WelcomeScreen.class));
+           startActivity(new Intent(this, SigninActivity.class));
        }
         usermail=findViewById(R.id.UserEmail);
-        usermail.setText("Dashboard");
+        usermail.setText("Hi, "+firebaseAuth.getCurrentUser().getEmail());
         progressDialog= new ProgressDialog(this);
     }
 
