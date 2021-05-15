@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/FancyButton">
+
+    <ImageView
+        android:id="@+id/fancy_btn_img"
+        tools:src="@drawable/hhhh"
+        style="@style/FancyButtonImage" />
+
+    <TextView
+        android:id="@+id/fancy_btn_txt"
+        android:text="Hotels And Villas"
+        style="@style/FancyButtonText" />
+
+</LinearLayout>

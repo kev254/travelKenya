@@ -258,114 +258,184 @@
 
 
 <!--            </HorizontalScrollView>-->
-            <LinearLayout
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_height="match_parent">-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:gravity="center"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:orientation="horizontal">-->
+<!--                    <androidx.cardview.widget.CardView-->
+<!--                        android:layout_width="150dp"-->
+<!--                        android:layout_height="80dp"-->
+<!--                        app:cardCornerRadius="5dp">-->
+<!--                        <TextView-->
+<!--                            android:layout_width="150dp"-->
+<!--                            android:layout_height="80dp"-->
+<!--                            android:drawableTop="@drawable/ic_person_outline_black_24dp"-->
+<!--                            android:gravity="center"-->
+<!--                            android:orientation="vertical"-->
+<!--                            android:textAllCaps="false"-->
+<!--                            android:textStyle="normal"-->
+<!--                            android:text="Villa And Hotels"-->
+<!--                            android:textColor="#000000">-->
+
+<!--                        </TextView>-->
+
+
+<!--                    </androidx.cardview.widget.CardView>-->
+<!--                    <androidx.cardview.widget.CardView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_margin="8dp"-->
+<!--                        app:cardCornerRadius="5dp">-->
+<!--                        <TextView-->
+<!--                            android:layout_width="150dp"-->
+<!--                            android:layout_height="80dp"-->
+<!--                            android:drawableTop="@drawable/ic_person_outline_black_24dp"-->
+<!--                            android:gravity="center"-->
+<!--                            android:orientation="vertical"-->
+<!--                            android:textAllCaps="false"-->
+<!--                            android:textStyle="normal"-->
+<!--                            android:text="Cab and Taxi"-->
+<!--                            android:textColor="#000000">-->
+
+<!--                        </TextView>-->
+
+
+<!--                    </androidx.cardview.widget.CardView>-->
+<!--                </LinearLayout>-->
+
+<!--            </LinearLayout>-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginTop="2dp"-->
+<!--                android:layout_height="match_parent">-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:gravity="center"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:orientation="horizontal">-->
+<!--                    <androidx.cardview.widget.CardView-->
+<!--                        android:layout_width="150dp"-->
+<!--                        android:layout_height="80dp"-->
+<!--                        app:cardCornerRadius="5dp">-->
+<!--                        <TextView-->
+<!--                            android:layout_width="150dp"-->
+<!--                            android:layout_height="80dp"-->
+<!--                            android:drawableTop="@drawable/ic_person_outline_black_24dp"-->
+<!--                            android:gravity="center"-->
+<!--                            android:orientation="vertical"-->
+<!--                            android:textAllCaps="false"-->
+<!--                            android:textStyle="normal"-->
+<!--                            android:text="Parks and Reserves "-->
+<!--                            android:textColor="#000000">-->
+
+<!--                        </TextView>-->
+
+
+<!--                    </androidx.cardview.widget.CardView>-->
+<!--                    <androidx.cardview.widget.CardView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_margin="8dp"-->
+<!--                        app:cardCornerRadius="5dp">-->
+<!--                        <TextView-->
+<!--                            android:layout_width="150dp"-->
+<!--                            android:layout_height="80dp"-->
+<!--                            android:drawableTop="@drawable/ic_person_outline_black_24dp"-->
+<!--                            android:gravity="center"-->
+<!--                            android:orientation="vertical"-->
+<!--                            android:textAllCaps="false"-->
+<!--                            android:textStyle="normal"-->
+<!--                            android:text="Nature Scenes"-->
+<!--                            android:textColor="#000000">-->
+
+<!--                        </TextView>-->
+
+
+<!--                    </androidx.cardview.widget.CardView>-->
+<!--                </LinearLayout>-->
+
+<!--            </LinearLayout>-->
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:orientation="vertical"
-                android:layout_marginTop="10dp"
-                android:layout_height="match_parent">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginTop="10dp"
-                    android:orientation="horizontal">
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="150dp"
-                        android:layout_height="80dp"
-                        app:cardCornerRadius="5dp">
-                        <TextView
-                            android:layout_width="150dp"
-                            android:layout_height="80dp"
-                            android:drawableTop="@drawable/ic_person_outline_black_24dp"
-                            android:gravity="center"
-                            android:orientation="vertical"
-                            android:textAllCaps="false"
-                            android:textStyle="normal"
-                            android:text="Villa And Hotels"
-                            android:textColor="#000000">
+                android:id="@+id/btns_container"
+                android:textAlignment="center"
+                style="@style/FancyButtonsContainer"
+                android:gravity="center_horizontal">
 
-                        </TextView>
+                <include
+                    layout="@layout/fancy_btn"
+                    android:id="@+id/museums_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
 
+                <include
+                    layout="@layout/fancy_btn"
+                    android:id="@+id/parks_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@id/museums_btn"
+                    android:layout_toEndOf="@id/museums_btn" />
 
-                    </androidx.cardview.widget.CardView>
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="8dp"
-                        app:cardCornerRadius="5dp">
-                        <TextView
-                            android:layout_width="150dp"
-                            android:layout_height="80dp"
-                            android:drawableTop="@drawable/ic_person_outline_black_24dp"
-                            android:gravity="center"
-                            android:orientation="vertical"
-                            android:textAllCaps="false"
-                            android:textStyle="normal"
-                            android:text="Cab and Taxi"
-                            android:textColor="#000000">
+                <include
+                    layout="@layout/fancy_btn"
+                    android:id="@+id/palaces_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:layout_below="@id/museums_btn" />
 
-                        </TextView>
+                <include
+                    layout="@layout/fancy_btn"
+                    android:id="@+id/monuments_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:layout_below="@id/parks_btn"
+                    android:layout_toRightOf="@id/palaces_btn"
+                    android:layout_toEndOf="@id/palaces_btn" />
 
+                <View
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@id/museums_btn"
+                    android:layout_toEndOf="@id/museums_btn"
+                    style="@style/VerticalDivider" />
 
-                    </androidx.cardview.widget.CardView>
-                </LinearLayout>
+                <View
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@id/museums_btn"
+                    style="@style/HorizontalDivider" />
 
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:orientation="vertical"
-                android:layout_marginTop="2dp"
-                android:layout_height="match_parent">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginTop="10dp"
-                    android:orientation="horizontal">
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="150dp"
-                        android:layout_height="80dp"
-                        app:cardCornerRadius="5dp">
-                        <TextView
-                            android:layout_width="150dp"
-                            android:layout_height="80dp"
-                            android:drawableTop="@drawable/ic_person_outline_black_24dp"
-                            android:gravity="center"
-                            android:orientation="vertical"
-                            android:textAllCaps="false"
-                            android:textStyle="normal"
-                            android:text="Villa And Hotels"
-                            android:textColor="#000000">
+                <View
+                    android:layout_toRightOf="@id/palaces_btn"
+                    android:layout_toEndOf="@id/palaces_btn"
+                    android:layout_below="@id/museums_btn"
+                    style="@style/VerticalDivider" />
 
-                        </TextView>
+                <View
+                    android:layout_toRightOf="@id/museums_btn"
+                    android:layout_toEndOf="@id/museums_btn"
+                    android:layout_below="@id/parks_btn"
+                    style="@style/HorizontalDivider" />
 
-
-                    </androidx.cardview.widget.CardView>
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="8dp"
-                        app:cardCornerRadius="5dp">
-                        <TextView
-                            android:layout_width="150dp"
-                            android:layout_height="80dp"
-                            android:drawableTop="@drawable/ic_person_outline_black_24dp"
-                            android:gravity="center"
-                            android:orientation="vertical"
-                            android:textAllCaps="false"
-                            android:textStyle="normal"
-                            android:text="Cab and Taxi"
-                            android:textColor="#000000">
-
-                        </TextView>
-
-
-                    </androidx.cardview.widget.CardView>
-                </LinearLayout>
-
-            </LinearLayout>
+            </RelativeLayout>
 
             <TextView
             android:layout_width="match_parent"

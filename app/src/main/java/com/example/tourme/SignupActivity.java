@@ -41,7 +41,7 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
         SignUp=findViewById(R.id.btnSignup);
         Email=findViewById(R.id.txtEmail);
         ConfirmPassword=findViewById(R.id.txtConfirmPassword);
-        username=findViewById(R.id.txtUsername);
+        username=findViewById(R.id.txtUserName);
         userphone=findViewById(R.id.txtPhone);
         LoginLink=findViewById(R.id.txtLoginLink);
 
