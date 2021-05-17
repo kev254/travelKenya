@@ -9,14 +9,14 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:orientation="vertical">
-        <de.hdodenhof.circleimageview.CircleImageView
+      <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="match_parent"
-            android:src="@drawable/hotel8"
-            android:layout_height="wrap_content"/>
+            android:src="@drawable/dev"
+            android:layout_height="200dp"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Find Hotels"
+            android:text="Connect with trusted Travel Agents"
             android:textAlignment="center"
             android:textSize="20dp"
             android:textColor="#1B5E20"
@@ -25,7 +25,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Find luxurious hotel around Kenya"
+            android:text="We will connect you with experts guides, travel advice and best travel values available.We hope you enjoy"
             android:textAlignment="center"
             android:textColor="#000"
             android:gravity="center_horizontal" />

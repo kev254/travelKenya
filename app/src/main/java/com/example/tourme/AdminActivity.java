@@ -82,7 +82,7 @@ public class AdminActivity extends AppCompatActivity {
 
                                 @Override
                                 public void onPermissionDenied(PermissionDeniedResponse response){
-                                //TODO: implement info dialog
+                                    //TODO: implement info dialog
                                     finish();
                                     Toast.makeText(getApplicationContext(),"Access Denied",Toast.LENGTH_LONG).show();
 
@@ -91,7 +91,7 @@ public class AdminActivity extends AppCompatActivity {
                                 @Override
                                 public void onPermissionRationaleShouldBeShown(PermissionRequest permission, PermissionToken token) {
 
-                             token.continuePermissionRequest();
+                                    token.continuePermissionRequest();
                                 }
                             }).check();
                 }else {
@@ -113,7 +113,7 @@ public class AdminActivity extends AppCompatActivity {
                 final String title,desc,email;
                 title=TitleText.getText().toString().trim();
                 desc=DescText.getText().toString().trim();
-               // email=TextEmail.getText().toString();
+                // email=TextEmail.getText().toString();
 
                 if(TextUtils.isEmpty(title)){
                     TitleText.setError("Title cannot be empty");
@@ -129,7 +129,7 @@ public class AdminActivity extends AppCompatActivity {
 
                 if(TextUtils.isEmpty(desc)){
                     TitleText.setError("Description cannot be empty");
-                   // PostButton.setEnabled(false);
+                    // PostButton.setEnabled(false);
                     return;
                 }
 
@@ -150,49 +150,49 @@ public class AdminActivity extends AppCompatActivity {
                 Task<Uri> task=uploadTask.continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
                     @Override
                     public Task<Uri> then(@NonNull Task<UploadTask.TaskSnapshot> task) throws Exception {
-                      if (task.isSuccessful()){
-                        Toast.makeText(getApplicationContext(),"Upload Successful",Toast.LENGTH_LONG).show();
-                      }
+                        if (task.isSuccessful()){
+                            Toast.makeText(getApplicationContext(),"Upload Successful",Toast.LENGTH_LONG).show();
+                        }
                         return reference.getDownloadUrl();
                     }
                 }).addOnCompleteListener(new OnCompleteListener<Uri>() {
                     @Override
                     public void onComplete(@NonNull Task<Uri> task) {
-                     //download uri for image
-                     Uri uri=task.getResult();
+                        //download uri for image
+                        Uri uri=task.getResult();
 
-                     //Download url of the image in firestore
+                        //Download url of the image in firestore
                         assert uri!=null;
-                     downloadUrl=uri.toString();
+                        downloadUrl=uri.toString();
 
                     }
                 }).addOnSuccessListener(new OnSuccessListener<Uri>() {
                     @Override
                     public void onSuccess(Uri uri) {
 
-                 if (downloadUrl!=null){
-                     final DatabaseReference reference1= FirebaseDatabase.getInstance().getReference("Images").push();
-                     reference1.addValueEventListener(new ValueEventListener() {
-                         @Override
-                         public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                            reference1.child("image_id").setValue(dataSnapshot.getKey()) ;
-                            reference1.child("image_url").setValue(downloadUrl);
-                            reference1.child("image_title").setValue(title);
-                            reference1.child("image_desc").setValue(desc);
-                           // reference1.child("image_email").setValue(email);
-                         }
+                        if (downloadUrl!=null){
+                            final DatabaseReference reference1= FirebaseDatabase.getInstance().getReference("Images").push();
+                            reference1.addValueEventListener(new ValueEventListener() {
+                                @Override
+                                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                                    reference1.child("image_id").setValue(dataSnapshot.getKey()) ;
+                                    reference1.child("image_url").setValue(downloadUrl);
+                                    reference1.child("image_title").setValue(title);
+                                    reference1.child("image_desc").setValue(desc);
+                                    // reference1.child("image_email").setValue(email);
+                                }
 
-                         @Override
-                         public void onCancelled(@NonNull DatabaseError databaseError) {
-return;
-                         }
-                     });
+                                @Override
+                                public void onCancelled(@NonNull DatabaseError databaseError) {
+                                    return;
+                                }
+                            });
 
-                 Toast.makeText(getApplicationContext(),"Posted successfully",Toast.LENGTH_LONG)  .show();
-                 dialog.dismiss();
-                 finish();
+                            Toast.makeText(getApplicationContext(),"Posted successfully",Toast.LENGTH_LONG)  .show();
+                            dialog.dismiss();
+                            finish();
 
-                 }
+                        }
 
                     }
                 });
@@ -208,18 +208,18 @@ return;
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-     if (requestCode==GALLERY_REQUEST && resultCode==RESULT_OK && data!=null && data.getData()!=null){
-         filePath=data.getData();
+        if (requestCode==GALLERY_REQUEST && resultCode==RESULT_OK && data!=null && data.getData()!=null){
+            filePath=data.getData();
 
-         try {
-             bitmap= MediaStore.Images.Media.getBitmap(getContentResolver(),filePath);
-             ChooseButton.setImageBitmap(bitmap);
-             ChooseButton.setScaleType(ImageView.ScaleType.CENTER_CROP);
-         }catch (Exception e){
-             Toast.makeText(getApplicationContext(),"could not load image please try again",Toast.LENGTH_LONG).show();
-             return;
-         }
-     }
+            try {
+                bitmap= MediaStore.Images.Media.getBitmap(getContentResolver(),filePath);
+                ChooseButton.setImageBitmap(bitmap);
+                ChooseButton.setScaleType(ImageView.ScaleType.CENTER_CROP);
+            }catch (Exception e){
+                Toast.makeText(getApplicationContext(),"could not load image please try again",Toast.LENGTH_LONG).show();
+                return;
+            }
+        }
 
     }
 

@@ -10,15 +10,15 @@
         android:layout_centerInParent="true"
         android:gravity="center_horizontal"
         android:orientation="vertical">
-        <de.hdodenhof.circleimageview.CircleImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="match_parent"
-            android:src="@drawable/hotel8"
-            android:layout_height="wrap_content"/>
+            android:src="@drawable/travelers"
+            android:layout_height="200dp"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Book A cab"
+            android:text="Book Hotels and Cabs"
             android:textAlignment="center"
             android:textSize="20dp"
             android:textColor="#1B5E20"
@@ -27,7 +27,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Through Our Agencies you will find most trusted taxi or cab"
+            android:text="Worried about your stay in Kenya? Want to rush somewhere during your stay in Kenya? We got you covered."
             android:textAlignment="center"
             android:textColor="#000"
             android:gravity="center_horizontal" />

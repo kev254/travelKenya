@@ -11,10 +11,10 @@
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
-        <de.hdodenhof.circleimageview.CircleImageView
+       <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="match_parent"
-            android:src="@drawable/hotel1"
-            android:layout_height="wrap_content"/>
+            android:src="@drawable/adventures"
+            android:layout_height="200dp"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -28,7 +28,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Visti Kenya at a glance before deciding your final destination"
+            android:text="Kenya is a leading tourist destination in Africa with millions of tourists visiting each year.Enjoy the endless savannah and the animals that inhabit it."
             android:textAlignment="center"
             android:textColor="#000"
             android:gravity="center_horizontal" />

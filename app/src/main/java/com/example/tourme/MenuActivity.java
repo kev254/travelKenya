@@ -33,6 +33,7 @@ import android.widget.Toast;
 import android.widget.ViewFlipper;
 
 import com.bumptech.glide.Glide;
+import com.example.Ht2;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
@@ -51,13 +52,13 @@ import com.karumi.dexter.listener.single.PermissionListener;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MenuActivity extends AppCompatActivity {
-    TextView usermail;
+public class MenuActivity extends AppCompatActivity implements View.OnClickListener {
+    TextView usermail,Cab_taxi, Museums_Monuments;
     ProgressDialog progressDialog;
     FirebaseAuth firebaseAuth;
     RecyclerView recyclerView;
     PostAdapter adapter;
-    ImageView hotels,parks,cars;
+    ImageView h1,h2,h3,h4;
    static List<PostModel> list;
    FloatingActionButton ExtendButton,VisitButton,ContactButton,EmailButton;
 
@@ -79,10 +80,25 @@ public class MenuActivity extends AppCompatActivity {
 
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(MenuActivity.this));
+        h1=findViewById(R.id.ht1);
+        h2=findViewById(R.id.ht2);
+        h3=findViewById(R.id.ht3);
+        h4=findViewById(R.id.ht4);
+        Cab_taxi=findViewById(R.id.cab);
+        Museums_Monuments=findViewById(R.id.museum);
+        h1.setOnClickListener(this);
+        h2.setOnClickListener(this);
+        h3.setOnClickListener(this);
+        h4.setOnClickListener(this);
+        Cab_taxi.setOnClickListener(this);
+        Museums_Monuments.setOnClickListener(this);
+        Parks_reserves.setOnClickListener(this);
+        naturalscenes.setOnClickListener(this);
+
 
 //initialize the list;
 
-list=new ArrayList<PostModel>();
+        list=new ArrayList<PostModel>();
 
         FirebaseDatabase database=FirebaseDatabase.getInstance();
         final DatabaseReference reference=database.getReference("Images");
@@ -211,7 +227,7 @@ for (FloatingActionButton floatingActionButton:fabs){
                             @Override
                             public void onPermissionGranted(PermissionGrantedResponse response) {
                                 Intent intent=new Intent(Intent.ACTION_DIAL);
-                                intent.setData(Uri.parse("tel:0792097883"));
+                                intent.setData(Uri.parse("tel:0790263985"));
                                 startActivity(intent);
                             }
 
@@ -231,7 +247,7 @@ token.continuePermissionRequest();
             }
             else
             if (v.getId()==R.id.fab2) {
-                Intent intent=new Intent(Intent.ACTION_SENDTO,Uri.fromParts("mailto","okombakevin@yahoo.com",null));
+                Intent intent=new Intent(Intent.ACTION_SENDTO,Uri.fromParts("mailto","denniswambungu@gmail.com",null));
                 intent.putExtra(Intent.EXTRA_TEXT,"Helllo? i am  so and so and  i am interested in your services as travel agency as i saw in travel Kenya");
                 startActivity(Intent.createChooser(intent,"Send Email"));
 
@@ -305,7 +321,7 @@ token.continuePermissionRequest();
         }
 
         if (item.getItemId()==R.id.locate_sites){
-            startActivity(new Intent(MenuActivity.this,SitesActivity.class));
+//            startActivity(new Intent(MenuActivity.this,SitesActivity.class));
 
         }
 
@@ -313,4 +329,32 @@ token.continuePermissionRequest();
     }
 
 
+    @Override
+    public void onClick(View v) {
+        if(v==h1){
+            Intent i= new Intent(MenuActivity.this, Ht1.class);
+            startActivity(i);
+        }
+        if(v==h2){
+            Intent i= new Intent(MenuActivity.this, Ht2.class);
+            startActivity(i);
+        }
+        if(v==h3){
+            Intent i= new Intent(MenuActivity.this, Ht3.class);
+            startActivity(i);
+        }
+        if(v==h4){
+            Intent i= new Intent(MenuActivity.this, Ht4.class);
+            startActivity(i);
+        }
+        if(v==Cab_taxi){
+            Intent i=new Intent(MenuActivity.this,TaxiActivity.class);
+            startActivity(i);
+        }
+        if(v==Museums_Monuments){
+            Intent i=new Intent(MenuActivity.this, Museums.class);
+            startActivity(i);
+        }
+
+    }
 }

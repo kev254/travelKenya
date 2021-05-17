@@ -19,4 +19,64 @@
     <string name="skip">Skip</string>
     <string name="next">Next</string>
     <string name="start">Start</string>
+    <string name="details_title">Details</string>
+    <string name="categories_title">Categories</string>
+    <string name="about_section_title">About</string>
+    <string name="details_section_title">Details</string>
+    <string name="details_address_title">Address:</string>
+    <string name="details_hours_title">Hours:</string>
+    <string name="details_phone_title">Phone:</string>
+    <string name="details_call_btn">Make A Call</string>
+    <string name="details_directions_btn">Visit Website</string>
+
+    <string name="cat_museums">Museums</string>
+    <string name="cat_parks">Parks</string>
+    <string name="cat_palaces">Palaces</string>
+    <string name="cat_monuments">Monuments</string>
+
+    <string name="cd_back_btn">Back Button</string>
+    <string name="cd_header_img">Header Image</string>
+    <string name="cd_header_ovrl">Header Overlay</string>
+    <string name="cd_content_bg">Content Background</string>
+    <string name="cd_category_item_bg">Category Item Background</string>
+    <string name="cd_category_item_arr">Open Item</string>
+    <string name="cd_main_bg_img">Main Background Image</string>
+    <string name="cd_fancy_btn">Fancy Button Icon</string>
+
+    <!--MUSEUMS-->
+    <string name="NairobiNationalMuseum">Nairobi National Museum</string>
+    <string name="NAddress">Nairobi,Kenya</string>]
+    <string name="NContact">0711651962</string>
+    <string name="Ndesc">The National Museums of Kenya (NMK) is a state corporation that manages museums, sites and monuments in Kenya. It carries out heritage research, and has expertise in subjects ranging from palaeontology, ethnography and biodiversity research and conservation. Its headquarters and the National Museum (Nairobi National Museum) are located on Museum Hill, near Uhuru Highway between Central Business District and Westlands in Nairobi</string>
+
+
+    <string name="placeholder_name">Kenya National Museum</string>
+    <string name="placeholder_address">Calea Victoriei 12, Bucharest</string>
+    <string name="placeholder_description">, Live a well-travelled life in style and experience authentic cuisines, indigenous aesthetics and spectacular delights in some of the world’s most extraordinary locations with Serena Hotels. Our diverse collection of thirty-five hotels, resorts, safari lodges, camps and forts within East Africa, Mozambique and South and Central Asia are for those who lean towards distinctive and inspirational experiences.</string>
+    <string name="placeholder_hours">09:00 &#8211; 17:00</string>
+    <string name="placeholder_phone">+254 732 123 333</string>
+    <string name="city_name">George Williamson House4th Floor, 4th Ngong AvenueP.O. BOX 48690 – 00100 nairobi, Kenya</string>
+
+    <string name="placeholder_hilton">Hilton</string>
+    <string name="placeholderhilton_address">Calea Victoriei 12,NAIROBI</string>
+    <string name="placeholderhilton_description">,A four star hotel located in Nairobi kenya Live a well-travelled life in style and experience authentic cuisines, indigenous aesthetics and spectacular delights in some of the world’s most extraordinary locations with Serena Hotels. Our diverse collection of thirty-five hotels, resorts, safari lodges, camps and forts within East Africa, Mozambique and South and Central Asia are for those who lean towards distinctive and inspirational experiences.</string>
+    <string name="placeholderhilton_hours">09:00 &#8211; 17:00</string>
+    <string name="placeholderhilton_phone">+254 20 2288000</string>
+    <string name="cityhilton_name">George Williamson House4th Floor, 4th Ngong AvenueP.O. BOX 48690 – 00100 nairobi, Kenya</string>
+
+    <string name="placeholder_villa"> Villa Rosa Kempinsiki</string>
+    <string name="placeholdervilla_address"> 209/73/5 Chiromo Lane Off Chiromo Road </string>
+    <string name="placeholdervilla_description">,A five star hotel located in Nairobi kenya Live a well-travelled life in style and experience authentic cuisines, indigenous aesthetics and spectacular delights in some of the world’s most extraordinary locations with Serena Hotels. Our diverse collection of thirty-five hotels, resorts, safari lodges, camps and forts within East Africa, Mozambique and South and Central Asia are for those who lean towards distinctive and inspirational experiences.</string>
+    <string name="placeholdervilla_hours">09:00 &#8211; 17:00</string>
+    <string name="placeholdervilla_phone">+254 20 2288000</string>
+    <string name="cityvilla_name">westlandsnairobi, Kenya</string>
+
+    <string name="placeholder_sarova">Sarova Hotels</string>
+    <string name="placeholdersarova_address">Kenyatta Avenue, Nairobi, Nairobi · 0.88 km</string>
+    <string name="placeholdersarova_description">,A four star hotel located in Nairobi kenya Live a well-travelled life in style and experience authentic cuisines, indigenous aesthetics and spectacular delights in some of the world’s most extraordinary locations with Serena Hotels. Our diverse collection of thirty-five hotels, resorts, safari lodges, camps and forts within East Africa, Mozambique and South and Central Asia are for those who lean towards distinctive and inspirational experiences.</string>
+    <string name="placeholdersarova_hours">09:00 &#8211; 17:00</string>
+    <string name="placeholdersarova_phone">+254 20 2288000</string>
+    <string name="citysarova_name">Nairobi</string>
+
+
 </resources>
