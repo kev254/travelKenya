@@ -92,8 +92,7 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         h4.setOnClickListener(this);
         Cab_taxi.setOnClickListener(this);
         Museums_Monuments.setOnClickListener(this);
-        Parks_reserves.setOnClickListener(this);
-        naturalscenes.setOnClickListener(this);
+
 
 
 //initialize the list;
