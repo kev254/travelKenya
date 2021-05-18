@@ -27,7 +27,7 @@
     <string name="details_hours_title">Hours:</string>
     <string name="details_phone_title">Phone:</string>
     <string name="details_call_btn">Make A Call</string>
-    <string name="details_directions_btn">Visit Website</string>
+    <string name="details_directions_btn">Book</string>
 
     <string name="cat_museums">Museums</string>
     <string name="cat_parks">Parks</string>
@@ -77,6 +77,11 @@
     <string name="placeholdersarova_hours">09:00 &#8211; 17:00</string>
     <string name="placeholdersarova_phone">+254 20 2288000</string>
     <string name="citysarova_name">Nairobi</string>
-
+    <string-array name="travel_agency">
+        <item>Bonfire Safaris</item>
+        <item>Bountiful Safaris</item>
+        <item>Expeditions Maasai Safaris</item>
+        <item>Akothee Safaris</item>
+    </string-array>
 
 </resources>

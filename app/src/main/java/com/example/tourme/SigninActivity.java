@@ -18,6 +18,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
+import cn.pedant.SweetAlert.SweetAlertDialog;
+
 public class SigninActivity extends AppCompatActivity implements View.OnClickListener {
     TextView signUpLink;
     EditText Email,Password;
@@ -64,7 +66,10 @@ public class SigninActivity extends AppCompatActivity implements View.OnClickLis
 
                         }
                         else {
-                            //
+                            SweetAlertDialog sd= new SweetAlertDialog(SigninActivity.this, SweetAlertDialog.ERROR_TYPE);
+                            sd.setTitle("ERROR.");
+                            sd.setContentText("Oops! Wrong Credentials ");
+                            sd.show();
                         }
 
                     }

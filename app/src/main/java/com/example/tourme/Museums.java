@@ -26,7 +26,7 @@ public class Museums extends AppCompatActivity {
         setContentView(R.layout.activity_museums);
 
         titles=new String[]
-                {"Nairobi National Museum","","Go Kenya tours and safari","Nahdy travel and tours","Asili adventures and tours","Cruzeiro safaris Kenya","Go Kenya","go Africa","Spot Kenya","Speedbird travel","Dream world"};
+                {"Expoler Kenya tours and travel Lmtd","Amicabre travel services Ltd","Go Kenya tours and safari","Nahdy travel and tours","Asili adventures and tours","Cruzeiro safaris Kenya","Go Kenya","go Africa","Spot Kenya","Speedbird travel","Dream world"};
         urls=new String[]
                 {"http://www.explorerkenya.com","http://www.amicabretravel.com","http://www.gokenyasafari.com","https://www.nahdytravel.com","https://www.asiliadventuresafaris.com/","https://www.cruzeiro-safaris.com/","https://www.acharyatravel.com/","https://www.go-africa-safaris.com/","https://www.spotkenyasafaris.com/","http://www.speedbirdsafaris.com/","https://www.dreamzworldgroup.com/\n"};
 
@@ -59,10 +59,11 @@ public class Museums extends AppCompatActivity {
         webView.loadUrl(uri);
     }
 
-    class Client extends WebViewClient{
+    static class Client extends WebViewClient{
         @Override
         public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
             return false;
         }
     }
 }
+

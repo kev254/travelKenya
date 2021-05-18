@@ -17,7 +17,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Museums"></activity>
+        <activity android:name=".BookActvity"></activity>
+        <activity android:name=".Museums" />
         <activity android:name=".Ht4" />
         <activity android:name=".Ht3" />
         <activity android:name="com.example.Ht2" />

@@ -226,7 +226,7 @@ for (FloatingActionButton floatingActionButton:fabs){
                             @Override
                             public void onPermissionGranted(PermissionGrantedResponse response) {
                                 Intent intent=new Intent(Intent.ACTION_DIAL);
-                                intent.setData(Uri.parse("tel:0790263985"));
+                                intent.setData(Uri.parse("tel:0711651962"));
                                 startActivity(intent);
                             }
 
@@ -237,8 +237,7 @@ for (FloatingActionButton floatingActionButton:fabs){
                             }
 
                             @Override
-                            public void onPermissionRationaleShouldBeShown(PermissionRequest permission, PermissionToken token) {
-token.continuePermissionRequest();
+                            public void onPermissionRationaleShouldBeShown(PermissionRequest permission, PermissionToken token) { token.continuePermissionRequest();
 
                             }
                         }).check();
@@ -246,9 +245,11 @@ token.continuePermissionRequest();
             }
             else
             if (v.getId()==R.id.fab2) {
-                Intent intent=new Intent(Intent.ACTION_SENDTO,Uri.fromParts("mailto","denniswambungu@gmail.com",null));
-                intent.putExtra(Intent.EXTRA_TEXT,"Helllo? i am  so and so and  i am interested in your services as travel agency as i saw in travel Kenya");
-                startActivity(Intent.createChooser(intent,"Send Email"));
+//                Intent intent=new Intent(Intent.ACTION_SENDTO,Uri.fromParts("mailto","denniswambungu@gmail.com",null));
+//                intent.putExtra(Intent.EXTRA_TEXT,"Helllo? i am  so and so a" +
+//                        "nd  i am interested in your services as travel agency as i saw in travel Kenya");
+//                startActivity(Intent.createChooser(intent,"Send Email"));
+                startActivity(new Intent(MenuActivity.this,BookActvity.class));
 
             }else
                 if (v.getId()==R.id.fab3){
@@ -351,8 +352,9 @@ token.continuePermissionRequest();
             startActivity(i);
         }
         if(v==Museums_Monuments){
-            Intent i=new Intent(MenuActivity.this, Museums.class);
+            Intent i=new Intent(MenuActivity.this,Museums.class);
             startActivity(i);
+
         }
 
     }
